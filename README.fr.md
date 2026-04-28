@@ -2,13 +2,15 @@
 
 [English](README.md) | [Español](README.es.md) | [Português](README.pt.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | Français | [Türkçe](README.tr.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru.md)
 
-[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happyhorse-coming-soon?utm_source=github&utm_medium=banner&utm_campaign=happy-horse)
+[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happy-horse?utm_source=github_readme_fr&utm_medium=banner&utm_campaign=happy-horse)
+
+> **Note:** The [English README](README.md) now includes API comparison tables, runnable Python scripts, and benchmark data. This localized version covers community signals only.
 
 Suivez en un seul endroit les derniers signaux de Happy Horse 1.0, y compris le compte officiel sur X, les publications publiques d'Alibaba et la réaction de la communauté.
 
 Happy Horse 1.0 est en tendance parce qu'il a percé dans les principales discussions sur les benchmarks vidéo IA, que `@HappyHorseATH` est apparu comme compte officiel sur X et qu'Alibaba Group a publié à son sujet. En même temps, il n'existe toujours aucun site officiel, domaine officiel ni lien d'essai officiel confirmés.
 
-[Rejoindre l'accès anticipé](https://evolink.ai/happyhorse-coming-soon?utm_source=github_readme_fr&utm_medium=cta&utm_campaign=happy-horse)
+[Rejoindre l'accès anticipé](https://evolink.ai/happy-horse?utm_source=github_readme_fr&utm_medium=cta&utm_campaign=happy-horse)
 
 ## Table des matières
 
@@ -20,7 +22,6 @@ Happy Horse 1.0 est en tendance parce qu'il a percé dans les principales discus
 - [Happy Horse 1.0 sur X / Twitter](#happy-horse-10-sur-x--twitter)
 - [Happy Horse 1.0 sur Reddit](#happy-horse-10-sur-reddit)
 - [Benchmarks Happy Horse 1.0](#benchmarks-happy-horse-10)
-- [Happy Horse vs Seedance 2.0](#happy-horse-vs-seedance-20)
 - [Produits construits avec Happy Horse](#produits-construits-avec-happy-horse)
 - [FAQ Happy Horse 1.0](#faq-happy-horse-10)
 - [Avertissement Happy Horse 1.0](#avertissement-happy-horse-10)
@@ -45,14 +46,6 @@ Voici les sources publiques les plus utiles derrière le narratif actuel de Happ
 - [Justine Moore on X](https://x.com/venturetwins/status/2041554747086553093)
 - [Angry Tom on X](https://x.com/AngryTomtweets/status/2041640342764843097)
 - [generativeAI on Reddit](https://www.reddit.com/r/generativeAI/comments/1sflqh2/a_new_anonymous_video_model_just_took_1_on/)
-
-### Happy Horse vs Seedance 2.0
-
-- [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)
-- [Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308)
-- [@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-- [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577)
-- [StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
 
 ### Attribution Alibaba / Taotian
 
@@ -103,7 +96,7 @@ Les informations publiques sont maintenant plus claires qu'il y a 48 heures. D'a
 - `@HappyHorseATH` est maintenant un compte X officiel visible dans la narrative publique.
 - Alibaba Group a publié un message de reconnaissance qui renforce la connexion Alibaba / ATH.
 - Il n'existe toujours pas de site web, domaine ou lien d'essai officiel confirmé. Tout site ou lien d'essai actuellement en circulation doit être traité comme non officiel.
-- Artificial Analysis a indiqué que le modèle supporte le texte-vers-vidéo et l'image-vers-vidéo, chacun avec et sans audio natif, et que l'accès API est prévu pour le 30 avril 2026.
+- Artificial Analysis a indiqué que le modèle supporte le texte-vers-vidéo et l'image-vers-vidéo, chacun avec et sans audio natif, et que l'accès API est désormais disponible via Evolink.
 - Les affirmations open-source continuent de circuler, mais le signal public le plus fort pointe vers la disponibilité API plutôt que des poids ouverts confirmés.
 
 ## Instantané des signaux Happy Horse 1.0
@@ -121,7 +114,7 @@ Du dataset X/Twitter collecté au cours des dernières 24 heures :
   - révélation d'attribution et confirmation du classement
   - émergence du compte X officiel
   - attribution Alibaba / ATH
-  - calendrier API du 30 avril
+  - API disponible via Evolink
   - clarification sur les faux sites / faux liens officiels
   - comparaisons côte à côte avec Seedance 2.0
   - scepticisme sur les clips mal étiquetés
@@ -158,7 +151,7 @@ Les gens veulent toujours savoir où l'essayer, si un site est officiel et si le
 ### Posts X/Twitter représentatifs
 
 - [Fil de révélation d'Artificial Analysis](https://x.com/ArtificialAnlys/status/2042468511025610775)
-  32 721 vues, 177 likes. La source la plus claire des dernières 24 heures pour l'attribution Alibaba, le statut du classement, le support de quatre modalités et l'objectif API du 30 avril.
+  32 721 vues, 177 likes. La source la plus claire des dernières 24 heures pour l'attribution Alibaba, le statut du classement, le support de quatre modalités et l'API disponible.
 
 - [Wildminder](https://x.com/wildmindai/status/2042355538567024880)
   28 570 vues, 246 likes. Forte réaction axée sur la qualité soulignant 720p, 24fps, textures, suivi de prompts et netteté visuelle.
@@ -179,9 +172,8 @@ Les gens veulent toujours savoir où l'essayer, si un site est officiel et si le
 
 - Le narratif des benchmarks est toujours le moteur, mais il est maintenant renforcé par des affirmations d'attribution à haute visibilité plutôt que par de la pure spéculation.
 - La mise à jour structurelle la plus importante est que l'histoire inclut maintenant un compte X officiel plus un post de reconnaissance d'Alibaba Group.
-- Le cadrage Happy Horse vs Seedance 2.0 est toujours le principal vecteur de distribution.
 - La plus grande mise à jour de confiance des 24 dernières heures est qu'il n'y a toujours pas de site web officiel ou d'URL d'essai officielle confirmée.
-- La plus grande mise à jour produit est le plan API du 30 avril rapporté.
+- La plus grande mise à jour produit est le API disponible via Evolink.
 - Le scepticisme est passé de "Est-ce réel ?" à "Quelles comparaisons sont réelles et correctement attribuées ?"
 
 ## Happy Horse 1.0 sur Reddit
@@ -234,45 +226,6 @@ Ce que les lecteurs doivent comprendre :
 
 Cela signifie que la visibilité benchmark a créé la demande avant que la clarté officielle n'existe.
 
-## Happy Horse vs Seedance 2.0
-
-C'est la comparaison la plus importante dans l'ensemble du dataset.
-
-### Point de vue optimiste
-
-Les partisans soutiennent que Happy Horse :
-
-Sources : [@laozhang2579 sur X](https://x.com/laozhang2579/status/2041461520425746902), [post comparatif d'Angry Tom sur X](https://x.com/AngryTomtweets/status/2041837603100471308), [@joshesye sur X](https://x.com/joshesye/status/2041845091795345426)
-
-- semble étonnamment fort pour un nouveau venu
-- peut être inhabituellement bon dans les séquences multi-plans
-- peut mieux suivre des prompts détaillés que prévu
-- pourrait avoir une importance stratégique si l'ouverture et l'accès sont réels
-
-### Point de vue sceptique
-
-Les critiques soutiennent que Seedance 2.0 :
-
-Sources : [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577), [thread StableDiffusion sur Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
-
-- semble encore plus naturel dans certaines comparaisons
-- gère la cohérence physique et le mouvement de manière plus fiable
-- peut être sous-représenté ou inégalement présenté dans certains contextes de comparaison
-
-### Point de vue stratégique
-
-Même si la qualité est seulement proche, pas clairement meilleure, Happy Horse aurait quand même de l'importance s'il l'emporte sur :
-
-Sources : [SimbaLee sur X](https://x.com/lipeng0820/status/2041782008905662592), [suivi de SimbaLee sur X](https://x.com/lipeng0820/status/2041811824220500028), [@jiqizhixin sur X](https://x.com/jiqizhixin/status/2041814095977181435), [thread LocalLLaMA sur Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1sfo1dv/happyhorse_maybe_will_be_open_weights_soon_it/)
-
-- l'ouverture
-- le temps d'attente
-- la déployabilité
-- le coût
-- l'adoption dans les workflows locaux
-
-Pour l'instant, le signal de l'écosystème est encore précoce. Reddit montre déjà des gens partageant des dépôts, des collections de prompts et des galeries autour du mot-clé, mais cette section devrait rester curatée plutôt que de devenir un simple dump de liens.
-
 ## FAQ Happy Horse 1.0
 
 ### Est-ce un dépôt officiel Happy Horse ?
@@ -281,7 +234,7 @@ Non. C'est un hub d'intelligence publique construit à partir de signaux sociaux
 
 ### Happy Horse 1.0 est-il open source ?
 
-Les affirmations open-source sont répandues, mais le signal public le plus fort des dernières 24 heures pointe vers un accès API planifié le 30 avril 2026, pas vers des poids ouverts confirmés.
+Les affirmations open-source sont répandues, mais le signal public le plus fort pointe vers un accès API via Evolink, pas vers des poids ouverts confirmés.
 
 ### Existe-t-il un site officiel ou un lien d'essai officiel ?
 

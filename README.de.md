@@ -2,13 +2,15 @@
 
 [English](README.md) | [Español](README.es.md) | [Português](README.pt.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | Deutsch | [Français](README.fr.md) | [Türkçe](README.tr.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru.md)
 
-[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happyhorse-coming-soon?utm_source=github&utm_medium=banner&utm_campaign=happy-horse)
+[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happy-horse?utm_source=github_readme_de&utm_medium=banner&utm_campaign=happy-horse)
+
+> **Note:** The [English README](README.md) now includes API comparison tables, runnable Python scripts, and benchmark data. This localized version covers community signals only.
 
 Verfolge die neuesten Happy Horse 1.0-Signale an einem Ort, darunter das offizielle X-Konto, öffentliche Beiträge von Alibaba und die Reaktionen der Community.
 
 Happy Horse 1.0 liegt im Trend, weil es in den wichtigsten Diskussionen über KI-Video-Benchmarks nach oben geschossen ist, `@HappyHorseATH` als offizielles X-Konto auftauchte und Alibaba Group es öffentlich erwähnte. Gleichzeitig gibt es weiterhin keine bestätigte offizielle Website, Domain oder Test-URL.
 
-[Frühzeitigen Zugang beantragen](https://evolink.ai/happyhorse-coming-soon?utm_source=github_readme_de&utm_medium=cta&utm_campaign=happy-horse)
+[Frühzeitigen Zugang beantragen](https://evolink.ai/happy-horse?utm_source=github_readme_de&utm_medium=cta&utm_campaign=happy-horse)
 
 ## Inhaltsverzeichnis
 
@@ -20,7 +22,6 @@ Happy Horse 1.0 liegt im Trend, weil es in den wichtigsten Diskussionen über KI
 - [Happy Horse 1.0 auf X / Twitter](#happy-horse-10-auf-x--twitter)
 - [Happy Horse 1.0 auf Reddit](#happy-horse-10-auf-reddit)
 - [Happy Horse 1.0 Benchmarks](#happy-horse-10-benchmarks)
-- [Happy Horse vs Seedance 2.0](#happy-horse-vs-seedance-20)
 - [Produkte, die mit Happy Horse gebaut wurden](#produkte-die-mit-happy-horse-gebaut-wurden)
 - [Happy Horse 1.0 FAQ](#happy-horse-10-faq)
 - [Happy Horse 1.0 Haftungsausschluss](#happy-horse-10-haftungsausschluss)
@@ -45,14 +46,6 @@ Dies sind die nützlichsten öffentlichen Quellen hinter dem aktuellen Happy Hor
 - [Justine Moore on X](https://x.com/venturetwins/status/2041554747086553093)
 - [Angry Tom on X](https://x.com/AngryTomtweets/status/2041640342764843097)
 - [generativeAI on Reddit](https://www.reddit.com/r/generativeAI/comments/1sflqh2/a_new_anonymous_video_model_just_took_1_on/)
-
-### Happy Horse vs Seedance 2.0
-
-- [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)
-- [Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308)
-- [@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-- [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577)
-- [StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
 
 ### Alibaba / Taotian Zuordnung
 
@@ -233,45 +226,6 @@ Was Leser verstehen sollten:
 - Dieses Benchmark-Signal löste dann Spekulationen, Reposts, Reverse-Engineering und inoffizielle SEO-Seiten aus.
 
 Das bedeutet, dass die Benchmark-Sichtbarkeit die Nachfrage schuf, bevor offizielle Klarheit bestand.
-
-## Happy Horse vs Seedance 2.0
-
-Dies ist der wichtigste Vergleich im gesamten Datensatz.
-
-### Optimistische Sichtweise
-
-Befürworter argumentieren, dass Happy Horse:
-
-Quellen: [@laozhang2579 auf X](https://x.com/laozhang2579/status/2041461520425746902), [Angry Tom Vergleichspost auf X](https://x.com/AngryTomtweets/status/2041837603100471308), [@joshesye auf X](https://x.com/joshesye/status/2041845091795345426)
-
-- für einen Neueinsteiger überraschend stark wirkt
-- bei Multi-Shot-Sequenzen ungewöhnlich gut sein könnte
-- detaillierte Prompts besser als erwartet befolgen könnte
-- strategisch wichtig werden könnte, wenn Offenheit und Zugang real sind
-
-### Skeptische Sichtweise
-
-Kritiker argumentieren, dass Seedance 2.0:
-
-Quellen: [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577), [StableDiffusion-Thread auf Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
-
-- in einigen Vergleichen noch natürlicher wirkt
-- physikalische Konsistenz und Bewegung zuverlässiger handhabt
-- in einigen Vergleichskontexten möglicherweise unterrepräsentiert oder ungleichmäßig präsentiert wird
-
-### Strategische Sichtweise
-
-Selbst wenn die Qualität nur ähnlich ist, nicht klar besser, würde Happy Horse immer noch wichtig sein, wenn es gewinnt bei:
-
-Quellen: [SimbaLee auf X](https://x.com/lipeng0820/status/2041782008905662592), [SimbaLee Follow-up auf X](https://x.com/lipeng0820/status/2041811824220500028), [@jiqizhixin auf X](https://x.com/jiqizhixin/status/2041814095977181435), [LocalLLaMA-Thread auf Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1sfo1dv/happyhorse_maybe_will_be_open_weights_soon_it/)
-
-- Offenheit
-- Wartezeit
-- Deploybarkeit
-- Kosten
-- lokaler Workflow-Adoption
-
-Derzeit sind die Ökosystem-Signale noch früh. Reddit zeigt bereits Menschen, die Repos, Prompt-Sammlungen und Galerien rund um das Schlüsselwort teilen, aber dieser Abschnitt sollte kuratiert bleiben statt ein Link-Dump zu werden.
 
 ## Happy Horse 1.0 FAQ
 

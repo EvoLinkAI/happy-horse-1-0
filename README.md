@@ -2,228 +2,205 @@
 
 English | [Español](README.es.md) | [Português](README.pt.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Türkçe](README.tr.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru.md)
 
-[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happyhorse-coming-soon?utm_source=github&utm_medium=banner&utm_campaign=happy-horse)
+[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happy-horse?utm_source=github_readme_en&utm_medium=banner&utm_campaign=happy-horse)
 
-Track the latest Happy Horse 1.0 signals in one place, including the official X account, Alibaba-side public posts, benchmark momentum, and community reaction.
+Track the latest Happy Horse 1.0 signals in one place — API integration guides, multi-model benchmark comparisons, runnable scripts, and community reaction across X and Reddit.
 
 Happy Horse 1.0 is trending because it broke into top AI video benchmark discussions, `@HappyHorseATH` appeared as the official X account, and Alibaba Group publicly posted about it. At the same time, there is still no confirmed official website, official domain, or official try-it URL.
 
-[Join Early Access](https://evolink.ai/happyhorse-coming-soon?utm_source=github_readme_en&utm_medium=cta&utm_campaign=happy-horse)
+[Join Early Access](https://evolink.ai/happy-horse?utm_source=github_readme_en&utm_medium=cta&utm_campaign=happy-horse)
 
 ## Table of Contents
 
-- [Latest 24h Update](#latest-24h-update)
-- [Happy Horse 1.0 Source Map](#happy-horse-10-source-map)
-- [Why Happy Horse 1.0 Is Trending](#why-happy-horse-10-is-trending)
-- [Happy Horse 1.0 Current Status](#happy-horse-10-current-status)
-- [Happy Horse 1.0 Signal Snapshot](#happy-horse-10-signal-snapshot)
-- [Happy Horse 1.0 on X / Twitter](#happy-horse-10-on-x--twitter)
-- [Happy Horse 1.0 on Reddit](#happy-horse-10-on-reddit)
+- [API Quick Start](#api-quick-start)
+- [Model Comparison Overview](#model-comparison-overview)
+- [Video Sample Gallery](#video-sample-gallery)
+- [Creation Guide](#creation-guide)
+- [Running the Scripts](#running-the-scripts)
+- [Trending Context & Community Signals](#trending-context--community-signals)
 - [Happy Horse 1.0 Benchmarks](#happy-horse-10-benchmarks)
-- [Happy Horse vs Seedance 2.0](#happy-horse-vs-seedance-20)
-- [Products Built With Happy Horse](#products-built-with-happy-horse)
-- [Happy Horse 1.0 FAQ](#happy-horse-10-faq)
-- [Happy Horse 1.0 Disclaimer](#happy-horse-10-disclaimer)
+- [FAQ](#faq)
+- [Disclaimer](#disclaimer)
 
-## Latest 24h Update
+## API Quick Start
 
-- 562 unique X/Twitter posts were captured in the last 24 hours from 789 raw posts.
-- `@HappyHorseATH` is now part of the latest story and should be treated as the official X account for Happy Horse.
-- Alibaba Group also posted a public recognition message, which strengthens the Alibaba / ATH attribution narrative.
-- There is still no confirmed official website, official domain, or official try-it URL. Any currently circulating site or trial link should be treated as unofficial.
-- Open-source claims are still circulating, but the strongest current public signal points to API availability rather than confirmed open weights.
-- Reddit remains a community discussion surface only. It is useful for tracking skepticism and rumor spread, not for establishing official status.
+Happy Horse 1.0 API is live via [Evolink](https://evolink.ai). Get your API key from the [API Key Management Page](https://evolink.ai/dashboard/keys).
 
-## Happy Horse 1.0 Source Map
+Text-to-Video — single curl call, async task:
 
-![Happy Horse 1.0 Timeline](source-map-timeline.jpg)
+```bash
+curl --request POST \
+  --url https://api.evolink.ai/v1/videos/generations \
+  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "model": "happyhorse-1.0-text-to-video",
+  "prompt": "A horse galloping through a sunlit meadow, golden hour lighting, cinematic wide shot",
+  "quality": "720p",
+  "aspect_ratio": "16:9",
+  "duration": 5,
+  "seed": 42
+}'
+```
 
-These are the most useful public sources behind the current Happy Horse narrative.
+The response returns a task ID — poll it to get the video URL (valid 24h).
 
-### Benchmark Performance
+Key parameters:
 
-- [Artificial Analysis on X](https://x.com/ArtificialAnlys/status/2041591989083500933)
-- [Justine Moore on X](https://x.com/venturetwins/status/2041554747086553093)
-- [Angry Tom on X](https://x.com/AngryTomtweets/status/2041640342764843097)
-- [generativeAI on Reddit](https://www.reddit.com/r/generativeAI/comments/1sflqh2/a_new_anonymous_video_model_just_took_1_on/)
+| Parameter | Options | Default |
+|-----------|---------|---------|
+| `quality` | `720p`, `1080p` | `720p` |
+| `aspect_ratio` | `16:9`, `9:16`, `1:1`, `4:3`, `3:4` | `16:9` |
+| `duration` | `3`–`15` seconds | `5` |
 
-### Happy Horse vs Seedance 2.0
+Prompt tip: shot-by-shot descriptions yield better multi-shot results — e.g. `Shot 1 [0~3s] wide angle: ...; Shot 2 [3~6s] medium shot: ...`
 
-- [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)
-- [Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308)
-- [@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-- [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577)
-- [StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
+Full API docs: [Text-to-Video](https://docs.evolink.ai/en/api-manual/video-series/happyhorse1.0/happyhorse-1.0-text-to-video) · [Image-to-Video](https://docs.evolink.ai/en/api-manual/video-series/happyhorse1.0/happyhorse-1.0-image-to-video)
 
-### Alibaba / Taotian Attribution
+## Model Comparison Overview
 
-- [HappyHorseATH on X](https://x.com/HappyHorseATH)
-- [Alibaba Group on X](https://x.com/AlibabaGroup/status/2042462318370701535)
-- [SimbaLee on X](https://x.com/lipeng0820/status/2041782008905662592)
-- [SimbaLee follow-up on X](https://x.com/lipeng0820/status/2041811824220500028)
-- [@LufzzLiz on X](https://x.com/LufzzLiz/status/2041813317124289012)
-- [@jiqizhixin on X](https://x.com/jiqizhixin/status/2041814095977181435)
-- [StableDiffusion Alibaba thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfnod2/could_happyhorse_be_zvideo_in_disguise_from/)
+How does Happy Horse stack up against other leading AI video generation models?
 
-### Open Source / Open Weights
+| Model | Provider | T2V | I2V | Audio | Max Res | FPS | $/sec | API | Open Weights |
+|-------|----------|:---:|:---:|:-----:|---------|:---:|------:|:---:|:------------:|
+| Happy Horse 1.0 | Alibaba ATH | Yes | Yes | Yes | 1080p | 24 | TBD | Yes | Unconfirmed |
+| Seedance 2.0 | ByteDance | Yes | Yes | No | 1080p | 24 | $0.08 | Yes | No |
+| Kling 1.6 | Kuaishou | Yes | Yes | No | 1080p | 30 | $0.07 | Yes | No |
+| Runway Gen-4 | Runway | Yes | Yes | No | 1080p | 24 | $0.05 | Yes | No |
+| Pika 2.2 | Pika | Yes | Yes | No | 1080p | 24 | $0.06 | Yes | No |
 
-- [Jason Zhu on X](https://x.com/GoSailGlobal/status/2041737961159717266)
-- [@laozhang2579 open-source claim on X](https://x.com/laozhang2579/status/2041835578921251244)
-- [Emily caution on X](https://x.com/IamEmily2050/status/2041997884132934035)
-- [LocalLLaMA thread on Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1sfo1dv/happyhorse_maybe_will_be_open_weights_soon_it/)
+T2V = text-to-video, I2V = image-to-video. Full structured data: [`benchmarks/models.json`](benchmarks/models.json)
 
-### Unofficial Site Claims / Trial Link Rumors
+## Video Sample Gallery
 
-- [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)
-- [@laozhang2579 site link on X](https://x.com/laozhang2579/status/2041835578921251244)
-- [Smartpig on X](https://x.com/Smartpigai/status/2041836901188215118)
-- [HappyHorse_AI thread on Reddit](https://www.reddit.com/r/HappyHorse_AI/comments/1sgjgoa/all_the_happy_horse_10_prompts_and_video_samples/)
+We use a set of [standardized prompts](samples/prompts.json) to compare output quality across models. Each prompt tests a specific capability:
 
-## Why Happy Horse 1.0 Is Trending
+| Prompt | Tests | Difficulty |
+|--------|-------|:----------:|
+| White horse galloping through meadow | Motion quality, lighting | Medium |
+| Cat swimming underwater | Water physics, refraction | Hard |
+| City intersection dusk-to-night | Scene complexity, light trails | Hard |
+| Portrait with head turn and smile | Facial expressions, subtle motion | Hard |
+| Coffee being poured with steam | Fluid dynamics, light interaction | Medium |
 
-The trend did not start from an official launch post. It spread because benchmark visibility came first, then community speculation, then attribution rumors, then comparison videos.
+*Side-by-side comparison GIFs will be added as models are tested. See [`samples/`](samples/) for details.*
 
-The strongest public trigger was the Artificial Analysis signal on X:
+## Creation Guide
 
-- [Artificial Analysis on X](https://x.com/ArtificialAnlys/status/2041591989083500933)
-  Claimed HappyHorse-1.0 was landing at the top of text-to-video and image-to-video rankings, including strong placement with audio.
+Happy Horse 1.0 supports four core workflows. Choose the mode based on the assets you already have:
 
-That benchmark signal was amplified by high-reach accounts:
+| You have... | Best mode | Inputs |
+|-------------|-----------|--------|
+| Just an idea | Text-to-Video | Text prompt only |
+| One image you want to animate | First-frame Image-to-Video | 1 image + optional prompt |
+| Multiple images for style, identity, or storyboard control | Reference Image-to-Video | 1-9 images + required prompt |
+| An existing clip you want to modify | Video Editing | 1 video + optional reference images + prompt |
 
-- [Justine Moore](https://x.com/venturetwins/status/2041554747086553093)
-  Framed it as a new video model at #1, especially strong in multi-shot generation and prompt following.
-- [Angry Tom](https://x.com/AngryTomtweets/status/2041640342764843097)
-  Framed it as a mysterious anonymous model that looked strong enough for people to ask whether Google had quietly dropped something new.
-- [@laozhang2579](https://x.com/laozhang2579/status/2041461520425746902)
-  Captured the Chinese-side reaction: no official site, no paper, no clear attribution, but suddenly top-ranked.
+### Prompt Formula
 
-## Happy Horse 1.0 Current Status
+A strong Happy Horse prompt usually follows this structure:
 
-Public information is now clearer than it was 48 hours ago. Based on the latest 24-hour summary:
+`Scene + Subject + Motion + Audio`
 
-- Happy Horse still has very strong social momentum.
-- Artificial Analysis publicly identified HappyHorse-1.0 as an Alibaba model from the ATH AI Innovation Unit.
-- `@HappyHorseATH` is now a visible official X account in the public narrative.
-- Alibaba Group published a recognition post that reinforces the Alibaba / ATH connection.
-- There is still no confirmed official website, official domain, or official try-it URL. Any currently circulating site or trial link should be treated as unofficial.
-- Artificial Analysis said the model supports text-to-video and image-to-video, each with and without native audio, and that API access is planned for April 30, 2026.
-- Open-source claims are still circulating, but the strongest current public signal points to API availability rather than confirmed open weights.
+- **Scene**: where the action happens, including environment, lighting, and atmosphere
+- **Subject**: the person, object, or character the video focuses on
+- **Motion**: character movement, camera movement, and transitions
+- **Audio**: spoken lines, ambient sound, or sound effects when needed
 
-## Happy Horse 1.0 Signal Snapshot
+Example:
 
-From the X/Twitter dataset collected over the last 24 hours:
+```text
+[Scene] A sunlit Paris cafe in late afternoon.
+[Subject] A man in a navy suit sits across from a woman in a crimson dress.
+[Motion] He leans forward while she slowly stirs her coffee; the camera pushes in gently.
+[Audio] He says, "You knew from the beginning, didn't you?" over soft cafe ambience.
+```
 
-- 789 raw posts collected
-- 562 unique posts after deduplication
-- query buckets:
-  - `happyhorse`: 377
-  - `-happy-horse-`: 159
-  - `-happyhorse`: 23
-  - `-快乐小马-`: 3
-- strongest visible themes:
-  - attribution reveal and leaderboard confirmation
-  - official X account emergence
-  - Alibaba / ATH attribution
-  - April 30 API timing
-  - fake-site / fake-official-link clarification
-  - Seedance 2.0 side-by-side comparisons
-  - mislabeled-clip skepticism
+### First-frame vs Reference Image-to-Video
 
-From the Reddit 24-hour search results:
+| Mode | Image role | Image count | Prompt | Output framing |
+|------|------------|-------------|--------|----------------|
+| First-frame I2V | The uploaded image becomes frame 1 and is closely preserved | 1 | Optional, but recommended | Follows the source image |
+| Reference I2V | Images act as visual references for identity, style, or story beats | 1-9 | Required | Freely selectable: `16:9`, `9:16`, `1:1`, `4:3`, `3:4` |
 
-- 5 relevant posts captured via live search fallback
-- local Reddit API status: 403 during collection
-- strongest visible communities:
-  - r/HappyHorse
-  - r/StableDiffusion
-  - individual user-post chatter reacting to the reveal
+Use **first-frame mode** when the opening shot must match your source image exactly. Use **reference mode** when you want the model to borrow appearance, scene, or storyboard cues without locking the full composition to a single first frame.
 
-## Happy Horse 1.0 on X / Twitter
+### Input Specs by Mode
 
-X/Twitter is where the strongest early signal lives. It is the best place to understand momentum, narrative formation, and what people think the model means.
+| Mode | Key input rules | Output rules |
+|------|-----------------|--------------|
+| Text-to-Video | Prompt required, up to 5000 English chars or 2500 Chinese chars | `720p`/`1080p`, `3-15s`, aspect ratio selectable |
+| First-frame I2V | 1 image, `.jpg`/`.jpeg`/`.png`/`.webp`, up to 30MB, short side >= 300px | `720p`/`1080p`, `3-15s`, framing follows the input image |
+| Reference I2V | 1-9 images, same image limits as above, prompt required | `720p`/`1080p`, `3-15s`, aspect ratio selectable |
+| Video Editing | 1 `.mp4`/`.mov` H264 video up to 100MB, optional 1-4 reference images | `720p`/`1080p`, `3-15s`, framing follows the source video |
 
-### What X/Twitter Is Saying
+### Practical Tips
 
-The discussion clusters into four buckets:
+#### Text-to-Video
 
-1. Attribution reveal and leaderboard validation  
-People are reacting to Artificial Analysis explicitly linking HappyHorse-1.0 to Alibaba and confirming #1 or #2 placement across the Artificial Analysis Video Arena leaderboards.
+- Be concrete instead of abstract: describe subject, action, scene, camera language, and mood.
+- Match duration to complexity: `3-5s` for simple motion, `8-15s` for multi-step scenes.
+- Shot-by-shot prompts work well for narrative clips.
 
-2. Seedance 2.0 comparison  
-This remains the dominant comparison frame. Some users think Happy Horse is a real challenger or new leader, while others still think Seedance looks more natural or consistent.
+#### First-frame Image-to-Video
 
-3. Attribution and product status  
-The attribution hunt has partially resolved. Multiple widely cited posts point to Alibaba's ATH AI Innovation Unit, and the public narrative now includes an official Happy Horse X account plus an Alibaba Group recognition post.
+- Use a clean, high-quality image with a clear, unobstructed subject.
+- Focus the prompt on what happens after the still frame starts moving.
+- Pick images that already imply motion for better continuation.
 
-4. Access and legitimacy confusion  
-People still want to know where to try it, whether a site is official, and whether the model is open source, but the clearest safe takeaway is that there is no confirmed official website or official trial URL right now.
+#### Reference Image-to-Video
 
-### Representative X/Twitter Posts
+- Keep references visually consistent and close to the target aspect ratio.
+- Use prompt references like `Image 1`, `Image 2`, etc. when combining multiple assets.
+- Best for character consistency, style transfer, and storyboard-driven generation.
 
-- [Artificial Analysis reveal thread](https://x.com/ArtificialAnlys/status/2042468511025610775)  
-  32,721 views, 177 likes. The clearest 24-hour source for Alibaba attribution, leaderboard status, four-modality support, and the April 30 API target.
+#### Video Editing
 
-- [Wildminder](https://x.com/wildmindai/status/2042355538567024880)  
-  28,570 views, 246 likes. Strong quality-focused reaction emphasizing 720p, 24fps, textures, prompt following, and visual sharpness.
+- State both what to change and what must stay unchanged.
+- Use reference images only when they directly support the intended edit.
+- Big style shifts may require matching lighting or audio instructions to avoid mismatch.
 
-- [HappyHorse official X account](https://x.com/HappyHorseATH)  
-  This is now the key account to watch for official account-level updates. Its existence does not change the separate fact that there is still no confirmed official website or official try-it URL.
+### Common Use Cases
 
-- [Wall St Engine](https://x.com/wallstengine/status/2042190307991990430)  
-  27,881 views, 155 likes. Good example of the business and enterprise-access framing now spreading beyond niche AI creator circles.
+- **Short drama**: character consistency, emotional close-ups, cinematic lighting
+- **E-commerce ads**: product demos, digital spokesperson videos, scalable creative production
+- **Social content**: stylized short clips, memes, product seeding, image-to-video remixing
 
-- [Alibaba Group recognition post](https://x.com/AlibabaGroup/status/2042462318370701535)  
-  Important because it adds explicit Alibaba-side public recognition to the story.
+Full platform walkthrough, prompt examples, and Chinese usage guide: [`happyhorse-master/guide.md`](happyhorse-master/guide.md)
 
-- [Brent Lynch](https://x.com/BrentLynch/status/2042252412594135243)  
-  3,462 views, 19 likes. Useful skeptical counterweight calling out a mislabeled HappyHorse comparison clip that was actually Seedance 2.0.
+## Running the Scripts
 
-### Main Takeaways From X/Twitter
+### Requirements
 
-- The benchmark narrative is still the engine, but now it is reinforced by higher-visibility attribution claims rather than pure speculation.
-- The most important structural update is that the story now includes an official X account plus an Alibaba Group recognition post.
-- The Happy Horse vs Seedance 2.0 framing is still the main distribution vector.
-- The biggest 24-hour trust update is that there is still no confirmed official website or official try-it URL.
-- The biggest product update is the reported April 30 API plan.
-- Skepticism has shifted from "is this real?" toward "which comparisons are real and properly attributed?"
+- Python 3.10+
+- API keys for the models you want to use
 
-## Happy Horse 1.0 on Reddit
+### Setup
 
-Reddit is much smaller than X for this topic, but it is useful because it shows how the broader AI community interprets the signal once it leaves the X bubble.
+```bash
+cd scripts
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env with your API keys — you only need keys for the models you plan to use
+```
 
-### What Reddit Is Saying
+### Commands
 
-The dominant Reddit questions are:
+```bash
+python generate.py --list                    # list all supported models
+python generate.py --model happyhorse-1.0 -p "prompt here"   # generate from one model
+python compare.py --dry-run -m happyhorse-1.0,seedance-2.0 -p "prompt"  # preview costs
+python compare.py -m happyhorse-1.0,seedance-2.0,kling-1.6 -p "prompt"   # run comparison
+```
 
-- Is this real or still rumor-driven?
-- Is Happy Horse really tied to Alibaba?
-- Is the model actually coming soon, and in what form?
-- Are the benchmark wins reflected in real comparisons?
-- How much of the circulating comparison media is trustworthy?
+See [`scripts/README.md`](scripts/README.md) for full documentation and how to add new models.
 
-### Most Relevant Reddit Threads
+## Trending Context & Community Signals
 
-- [r/HappyHorse: HappyHorse-1.0 has landed in #1 or #2 across all of the leaderboards in the Artificial Analysis Video Arena](https://www.reddit.com/search/?q=happy+horse&sort=new&t=day)  
-  Best signal of Reddit picking up the attribution-reveal and leaderboard-confirmation narrative.
+For background on why Happy Horse is trending and detailed social media signal tracking:
 
-- [r/HappyHorse: Alibaba's very own "HappyHorse"](https://www.reddit.com/search/?q=happy+horse&sort=new&t=day)  
-  Clean example of the attribution narrative carrying over into Reddit discussion.
-
-- [r/StableDiffusion: Happy Horse deceiving practices](https://www.reddit.com/search/?q=happy+horse&sort=new&t=day)  
-  Strong example of the new skepticism cluster focused on misleading comparisons and attribution quality.
-
-- [r/StableDiffusion: so do we officially have a legit Happy Horse account now or is this some next-level April Fool’s that just refuses to die?](https://www.reddit.com/search/?q=happy+horse&sort=new&t=day)  
-  Captures the platform's uncertainty around legitimacy, even after the latest high-visibility attribution posts.
-
-- [u/Status-Calendar-9494: looks like HappyHorse is coming](https://www.reddit.com/search/?q=happy+horse&sort=new&t=day)  
-  Represents the looser user-post chatter spreading the rollout narrative beyond subreddit threads.
-
-### What Reddit Adds That X Does Not
-
-- more explicit skepticism about fake or mislabeled comparison content
-- a clearer legitimacy check on whether newly visible accounts or narratives should be trusted
-- faster mutation of X narratives into simplified retail discussion
-- a useful signal that trust and attribution are now as important as raw benchmark hype
+- [Trending Context](docs/trending-context.md) — Latest 24h update, source map, why it's trending, current status
+- [Community Signals](docs/community-signals.md) — Signal snapshot, X/Twitter analysis, Reddit discussion
 
 ## Happy Horse 1.0 Benchmarks
 
@@ -237,44 +214,7 @@ What readers should understand:
 
 This means benchmark visibility created the demand before official clarity existed.
 
-## Happy Horse vs Seedance 2.0
-
-This is the most important comparison in the entire dataset.
-
-### Bullish View
-
-Supporters argue that Happy Horse:
-
-Sources: [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902), [Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308), [@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-
-- looks surprisingly strong for a new entrant
-- may be unusually good at multi-shot sequences
-- may follow detailed prompts better than expected
-- could matter strategically if openness and access are real
-
-### Skeptical View
-
-Critics argue that Seedance 2.0:
-
-Sources: [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577), [StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
-
-- still looks more natural in some comparisons
-- handles physical consistency and motion more reliably
-- may be underrepresented or unevenly surfaced in some comparison contexts
-
-### Strategic View
-
-Even if quality is merely close, not clearly better, Happy Horse would still matter if it wins on:
-
-Sources: [SimbaLee on X](https://x.com/lipeng0820/status/2041782008905662592), [SimbaLee follow-up on X](https://x.com/lipeng0820/status/2041811824220500028), [@jiqizhixin on X](https://x.com/jiqizhixin/status/2041814095977181435), [LocalLLaMA thread on Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1sfo1dv/happyhorse_maybe_will_be_open_weights_soon_it/)
-
-- openness
-- queue time
-- deployability
-- cost
-- local workflow adoption
-
-## Happy Horse 1.0 FAQ
+## FAQ
 
 ### Is this an official Happy Horse repository?
 
@@ -282,7 +222,7 @@ No. This is a public intelligence hub built from social and community signals.
 
 ### Is Happy Horse 1.0 open source?
 
-Open-source claims are widespread, but the strongest 24-hour public signal points to planned API access on April 30, 2026, not confirmed open weights.
+Open-source claims are widespread, but the strongest public signal points to API access via Evolink, not confirmed open weights.
 
 ### Is there an official website or official try-it link?
 
@@ -300,6 +240,16 @@ Because the story moved from rumor to partial confirmation: Artificial Analysis 
 
 Because Reddit exposes skepticism, open-weights interest, and tooling intent more clearly than the raw X hype cycle.
 
-## Happy Horse 1.0 Disclaimer
+### How do I use the comparison scripts?
+
+See [Running the Scripts](#running-the-scripts) above. You need Python 3.10+ and API keys for the models you want to test. The `--dry-run` flag lets you preview what will be called and estimated costs before making any API requests.
+
+### Which model should I use?
+
+It depends on your priorities. Happy Horse leads on benchmarks and is the only model with native audio — its API is live via [Evolink](https://evolink.ai). Runway Gen-4 offers the lowest per-second pricing, Kling 1.6 has the highest FPS, and Seedance 2.0 is strongest on physical consistency.
+
+## Disclaimer
 
 This repository is not an official Happy Horse project. It aggregates public discussion from X/Twitter and Reddit for research, monitoring, and discovery. Public claims can change quickly. Treat rumored technical details, release dates, attribution claims, website claims, and try-it links as provisional unless they are directly confirmed through a clearly official public channel.
+
+The comparison scripts call third-party APIs that may incur costs. Use the `--dry-run` flag to preview estimated costs before running. API endpoints, pricing, and availability are based on publicly available information and may change without notice.

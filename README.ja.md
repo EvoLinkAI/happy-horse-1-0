@@ -2,13 +2,15 @@
 
 [English](README.md) | [Español](README.es.md) | [Português](README.pt.md) | 日本語 | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Türkçe](README.tr.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru.md)
 
-[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happyhorse-coming-soon?utm_source=github&utm_medium=banner&utm_campaign=happy-horse)
+[![Happy Horse 1.0 Banner](banner.png)](https://evolink.ai/happy-horse?utm_source=github_readme_ja&utm_medium=banner&utm_campaign=happy-horse)
+
+> **Note:** The [English README](README.md) now includes API comparison tables, runnable Python scripts, and benchmark data. This localized version covers community signals only.
 
 公式Xアカウント、Alibaba側の公開投稿、コミュニティの反応を含む、Happy Horse 1.0の最新シグナルを一か所で追跡します。
 
 Happy Horse 1.0がトレンドになっているのは、主要なAI動画ベンチマーク議論の上位に食い込み、`@HappyHorseATH`が公式Xアカウントとして現れ、Alibaba Groupもそれについて公開投稿したからです。その一方で、確認済みの公式サイト、公式ドメイン、公式試用URLはまだ存在しません。
 
-[アーリーアクセスに参加](https://evolink.ai/happyhorse-coming-soon?utm_source=github_readme_ja&utm_medium=cta&utm_campaign=happy-horse)
+[アーリーアクセスに参加](https://evolink.ai/happy-horse?utm_source=github_readme_ja&utm_medium=cta&utm_campaign=happy-horse)
 
 ## 目次
 
@@ -20,7 +22,6 @@ Happy Horse 1.0がトレンドになっているのは、主要なAI動画ベン
 - [X / Twitter上のHappy Horse 1.0](#x--twitter上のhappy-horse-10)
 - [Reddit上のHappy Horse 1.0](#reddit上のhappy-horse-10)
 - [Happy Horse 1.0 ベンチマーク](#happy-horse-10-ベンチマーク)
-- [Happy Horse vs Seedance 2.0](#happy-horse-vs-seedance-20)
 - [Happy Horseで作られた製品](#happy-horseで作られた製品)
 - [Happy Horse 1.0 FAQ](#happy-horse-10-faq)
 - [Happy Horse 1.0 免責事項](#happy-horse-10-免責事項)
@@ -45,14 +46,6 @@ Happy Horse 1.0がトレンドになっているのは、主要なAI動画ベン
 - [Justine Moore on X](https://x.com/venturetwins/status/2041554747086553093)
 - [Angry Tom on X](https://x.com/AngryTomtweets/status/2041640342764843097)
 - [generativeAI on Reddit](https://www.reddit.com/r/generativeAI/comments/1sflqh2/a_new_anonymous_video_model_just_took_1_on/)
-
-### Happy Horse vs Seedance 2.0
-
-- [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)
-- [Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308)
-- [@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-- [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577)
-- [StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
 
 ### アリババ / タオティアン帰属
 
@@ -103,7 +96,7 @@ Happy Horse 1.0がトレンドになっているのは、主要なAI動画ベン
 - `@HappyHorseATH`は公開ナラティブにおける公式Xアカウントとして可視化されています。
 - Alibaba GroupがAlibaba / ATHの関連性を強化する認識投稿を公開しました。
 - 確認された公式ウェブサイト、公式ドメイン、公式試用URLはまだありません。現在流通しているサイトや試用リンクは非公式として扱うべきです。
-- Artificial Analysisによると、モデルはネイティブオーディオあり・なしのテキスト→動画と画像→動画の4モダリティをサポートし、APIアクセスは2026年4月30日を予定しています。
+- Artificial Analysisによると、モデルはネイティブオーディオあり・なしのテキスト→動画と画像→動画の4モダリティをサポートし、APIアクセスはEvolinkを通じて利用可能になっています。
 - オープンソースの主張は依然として流通していますが、最も強力な公開シグナルは確認されたオープンウェイトではなくAPI可用性を示しています。
 
 ## Happy Horse 1.0 シグナルスナップショット
@@ -121,7 +114,7 @@ Happy Horse 1.0がトレンドになっているのは、主要なAI動画ベン
   - 帰属の明確化とリーダーボード確認
   - 公式Xアカウントの出現
   - Alibaba / ATH帰属
-  - 4月30日のAPIタイミング
+  - API公開済み（Evolink経由）
   - 偽サイト / 偽公式リンクの明確化
   - Seedance 2.0との並列比較
   - 誤ラベルクリップへの懐疑論
@@ -158,7 +151,7 @@ Artificial AnalysisがHappyHorse-1.0をAlibabaに明示的に結びつけ、Arti
 ### 代表的なX/Twitter投稿
 
 - [Artificial Analysis明確化スレッド](https://x.com/ArtificialAnlys/status/2042468511025610775)
-  閲覧数32,721、いいね177件。Alibaba帰属、リーダーボードステータス、4モダリティサポート、4月30日APIターゲットに関する最も明確な24時間ソース。
+  閲覧数32,721、いいね177件。Alibaba帰属、リーダーボードステータス、4モダリティサポート、API公開済みに関する最も明確な24時間ソース。
 
 - [Wildminder](https://x.com/wildmindai/status/2042355538567024880)
   閲覧数28,570、いいね246件。720p、24fps、テクスチャ、プロンプト追従、視覚的鮮明さを強調した品質重視の強い反応。
@@ -179,9 +172,8 @@ Artificial AnalysisがHappyHorse-1.0をAlibabaに明示的に結びつけ、Arti
 
 - ベンチマークナラティブは依然としてエンジンですが、純粋な憶測ではなく高い可視性の帰属主張によって強化されています。
 - 最も重要な構造的更新は、ストーリーに公式Xアカウントとアリババグループの認識投稿が含まれるようになったことです。
-- Happy Horse vs Seedance 2.0のフレーミングは依然として主要な配布ベクターです。
 - 最大の24時間信頼更新は、確認された公式ウェブサイトも公式試用URLも依然として存在しないことです。
-- 最大の製品更新は報告された4月30日のAPIプランです。
+- 最大の製品更新はEvolinkでのAPI公開です。
 - 懐疑論は「これは本物か？」から「どの比較が本物で正しく帰属されているか？」へとシフトしています。
 
 ## Reddit上のHappy Horse 1.0
@@ -234,45 +226,6 @@ Redditの支配的な質問は：
 
 つまり、ベンチマークの可視性が公式な明確さが存在する前に需要を創り出したということです。
 
-## Happy Horse vs Seedance 2.0
-
-これがデータセット全体で最も重要な比較です。
-
-### 強気の見方
-
-支持者はHappy Horseが：
-
-出典: [@laozhang2579 on X](https://x.com/laozhang2579/status/2041461520425746902)、[Angry Tom comparison post on X](https://x.com/AngryTomtweets/status/2041837603100471308)、[@joshesye on X](https://x.com/joshesye/status/2041845091795345426)
-
-- 新参者として驚くほど強力に見えると主張します
-- マルチショットシーケンスで異常に優れている可能性があります
-- 詳細なプロンプトを予想よりも良く追従できる可能性があります
-- オープン性とアクセスが本物であれば、戦略的に重要になりうります
-
-### 懐疑的な見方
-
-批評家はSeedance 2.0が：
-
-出典: [GENEL skeptical take on X](https://x.com/genel_ai/status/2041806001129623577)、[StableDiffusion thread on Reddit](https://www.reddit.com/r/StableDiffusion/comments/1sfo3dq/a_new_sota_local_video_model_happyhorse_10_will/)
-
-- 一部の比較でまだより自然に見えると主張します
-- 物理的な一貫性と動きをより確実に処理します
-- 一部の比較文脈で不均等に表面化または露出されている可能性があります
-
-### 戦略的な見方
-
-品質が明確に優れているのではなくただ近いだけだとしても、Happy HorseがこれらでSeedanceに勝つなら依然として重要です：
-
-出典: [SimbaLee on X](https://x.com/lipeng0820/status/2041782008905662592)、[SimbaLee follow-up on X](https://x.com/lipeng0820/status/2041811824220500028)、[@jiqizhixin on X](https://x.com/jiqizhixin/status/2041814095977181435)、[LocalLLaMA thread on Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1sfo1dv/happyhorse_maybe_will_be_open_weights_soon_it/)
-
-- オープン性
-- キュー時間
-- 展開可能性
-- コスト
-- ローカルワークフローの採用
-
-現時点では、エコシステムシグナルはまだ初期段階です。Redditではすでにこのキーワードの周りにリポジトリ、プロンプトコレクション、ギャラリーを共有している人々がいますが、このセクションはリンクのダンプにならないよう、キュレーションされた状態を維持すべきです。
-
 ## Happy Horse 1.0 FAQ
 
 ### これは公式のHappy Horseリポジトリですか？
@@ -281,7 +234,7 @@ Redditの支配的な質問は：
 
 ### Happy Horse 1.0はオープンソースですか？
 
-オープンソースの主張は広まっていますが、最新24時間の最も強力な公開シグナルは確認されたオープンウェイトではなく、2026年4月30日の計画されたAPIアクセスを示しています。
+オープンソースの主張は広まっていますが、最も強力な公開シグナルは確認されたオープンウェイトではなく、Evolinkを通じたAPIアクセスを示しています。
 
 ### 公式サイトや公式試用リンクはありますか？
 
